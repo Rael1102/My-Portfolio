@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rael's Portfolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Courier, monospace;
+            position: relative; 
+        }
+        .profile-img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+        body {
+            background-image: url('waves.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .navbar {
+            background-color: rgba(7, 0, 100, 0.9); 
+        }
+        .navbar-brand {
+            color: white;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            margin-right: 20px; 
+        }
+        .navbar-nav .nav-link:hover {
+            color: lightgray;
+        }
+        .info-box {
+            background-color: rgba(7, 0, 100, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            color: white; 
+        }
+        .gifsize {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: auto;
+        } 
+        .gifsecsize {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto
+        }
+        .fb-icon i,
+        .ig-icon i,
+        .tw-icon i {
+            font-size: 50px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; 
+            z-index: 9999;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            font-size: 30px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #007bff; 
+            color: white;
+            cursor: pointer;
+        }
+        .skillpics {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">👨‍🎓 Rael's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToHome()">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToAbout()">🤔 About</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToSkills()">💪 Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToMyWorks()">🖥️ My Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToContacts()">📱 Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="info-box mt-3" id="home">
+                <div class="text-center">
+                    <img src="djpic.jpg" alt="Your Picture" class="profile-img">
+                    <h1>Israel Basilio</h1>
+                    <h3>Your future web and/or game developer!</h3>
+                    <div>
+                        <p class="lead">
+                            Hi, I'm Israel Basilio, a student of Sir Rodillo Gole and on this portfolio you can see all my works!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 200px;"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="info-box mt-3" id="about">
+                <img src="thinking.gif" class="gifsecsize"></h1>
+                <h1 class="text-center">About 
+                <h2 class="text-center">Here you can read about all my hobbies and passions!</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="amogus.gif" class="gifsize">
+                        <p class="text-center">Since I was a kid I always loved gaming! You can also say that it was the reason it led me to wanting to be a computer scientist.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="basketball.gif" class="gifsize">
+                        <p  class="text-center">Basketball is one of my passions. The feel that you get once you get a bucket is a feel that you'll love.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="music.gif" class="gifsize">
+                        <p>Music is also one of my hobbies, Because it helps soothe my mind and makes me at ease.</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="cooking.gif" class="gifsize">
+                        <p class="text-center">Cooking is also a fun and helpful hobby! Making food for other people is a pleasure i'd always love to have.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="movie.gif" class="gifsize">
+                        <p class="text-center">Watching movies is also refreshing for the mind. The story that movies tell are often unreal but it helps me relax.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="sleep.gif" class="gifsize">
+                        <p>I consider sleeping one of my hobbies. Not only does it feel good but it helps in focusing your brain!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 200px;"></div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="info-box mt-3" id="skills">
+            <img src="skill.gif" class="gifsecsize">
+            <h1 class="text-center">Skills</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="python.jpg" class="skillpics">
+                    <h2 class="text-center">PYTHON</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="html.jpg" class="skillpics">
+                    <h2 class="text-center">HTML</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="css.jpg" class="skillpics">
+                    <h2 class="text-center">CSS</h2>
+                </div>
+            </div>
+            <div class= "row">
+                <p>Although currently these are the only 3 programming language that I know I can tell you with all honesty that I will learn other languages and will keep enhancing my skills on these languages</p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div style="height: 200px;"></div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="info-box mt-3" id="myworks">
+                <img src="my works.gif" class="gifsecsize">
+                <h1 class="text-center">My Works</h1>
+                <h5 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rael1102.github.io/ITEC-50-Grid-system-hands-on-act/" target="_blank">Click here to see my "Grid system activity"!</a></h5>
+                <h5 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rael1102.github.io/ITEC-50-Responsive-Grid-system-/" target="_blank">Click here to see my "Responsive grid system"!</a></h5>
+                <h5 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rael1102.github.io/ITEC-50-Kid-story-Lost-and-found-/" target="_blank">Click here to see my "Kid's story activity!"</a></h5>
+                <h5 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rael1102.github.io/ITEC-50-Resto-Table/" target="_blank">Click here to see my "Resto table activity!"</a></h5>
+                <h5 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rael1102.github.io/ITEC-50-Jumbotron/" target="_blank">Click here to see my "Jumbotron activity!"</a></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 200px;"></div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="info-box mt-3" id="contacts">
+                <img src="contact.gif" class="gifsecsize">
+                <h1 class="text-center">Contacts</h1>
+                <p class="text-center">Here are the ways you can contact me!</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/israel.basilio.58" target="_blank" class="mr-3 fb-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/raelxd_/" target="_blank" class="mr-3 ig-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/bloopbleep02" target="_blank" class="tw-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="scrollToTop()" class="back-to-top btn btn-primary"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    function scrollToAbout() {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToHome() {
+        document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToMyWorks() {
+        document.getElementById('myworks').scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToContacts() {
+        document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToSkills() {
+        document.getElementById('skills').scrollIntoView({behavior: 'smooth'})
+    }
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        var scrollToTopBtn = document.querySelector(".back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
